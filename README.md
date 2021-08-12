@@ -12,10 +12,10 @@ Project Link: https://github.com/Vladimir-Novick/React-Tree-Menu
 
 ## Install NPM packages:
 
-npm install -g create-react-app
-npm install styled-components
-npm install -g react-dom
-npm install -g react
+-. npm install -g create-react-app
+-. npm install styled-components
+-. npm install -g react-dom
+-. npm install -g react
 
 ## Configuration:
 
