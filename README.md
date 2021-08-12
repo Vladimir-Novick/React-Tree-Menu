@@ -1,22 +1,27 @@
 
-install base packages:
+## License
+
+Distributed under the MIT License. See LICENSE for more information.
+
+## Contact
+
+Vladimir Novick -  vlad.novick@gmail.com , www.linkedin.com/in/vladimirnovick
+
+Project Link: https://github.com/Vladimir-Novick/React-Tree-Menu
+
+
+## Install NPM packages:
+
+1. install base packages:
 
 npm install -g create-react-app
 
-create base application:
-
-npx create-react-app my-app
-
-
-install react-Redux
+2. install react-Redux
 
 npm install --save react-redux
 
-React Icons
 
-npm install react-icons --save
+3. install styled components
 
-"styled-components"
+npm i styled-components
 
-
-npm install --save-dev eslint-plugin-react
