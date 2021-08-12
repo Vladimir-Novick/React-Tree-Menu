@@ -12,16 +12,11 @@ Project Link: https://github.com/Vladimir-Novick/React-Tree-Menu
 
 ## Install NPM packages:
 
-1. install base packages:
-
 npm install -g create-react-app
+npm install styled-components
+npm install -g react-dom
+npm install -g react
 
-2. install react-Redux
+## Configuration:
 
-npm install --save react-redux
-
-
-3. install styled components
-
-npm i styled-components
-
+Please look : https://code.visualstudio.com/docs/nodejs/reactjs-tutorial
