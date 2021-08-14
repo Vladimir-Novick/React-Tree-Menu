@@ -3,11 +3,13 @@ export const data = {
       path: '/projects',
       type: 'group',
       isRoot: true,
-      children: ['/projects/vlad', '/projects/jslancer'],
+      isOpen:true,
+      children: ['/projects/vlad', '/projects/TreeMenu'],
     },
     '/projects/vlad': {
       path: '/projects/vlad',
       type: 'group',
+      isOpen:true,
       children: ['/projects/vlad/readme'],
     },
     '/projects/vlad/readme': {
@@ -15,23 +17,24 @@ export const data = {
       type: 'item',
       content: 'Thanks for reading me me.'
     },
-    '/projects/jslancer': {
-      path: '/projects/jslancer',
+    '/projects/TreeMenu': {
+      path: '/projects/TreeMenu',
       type: 'group',
-      children: ['/projects/jslancer/projects', '/projects/jslancer/vblogs'],
+      isOpen:true,
+      children: ['/projects/TreeMenu/projects', '/projects/TreeMenu/vblogs'],
     },
-    '/projects/jslancer/projects': {
-      path: '/projects/jslancer/projects',
+    '/projects/TreeMenu/projects': {
+      path: '/projects/TreeMenu/projects',
       type: 'group',
-      children: ['/projects/jslancer/projects/treeview'],
+      children: ['/projects/TreeMenu/projects/treeview'],
     },
-    '/projects/jslancer/projects/treeview': {
-      path: '/projects/jslancer/projects/treeview',
+    '/projects/TreeMenu/projects/treeview': {
+      path: '/projects/TreeMenu/projects/treeview',
       type: 'group',
       children: [],
     },
-    '/projects/jslancer/vblogs': {
-      path: '/projects/jslancer/vblogs',
+    '/projects/TreeMenu/vblogs': {
+      path: '/projects/TreeMenu/vblogs',
       type: 'group',
       children: [],
     },

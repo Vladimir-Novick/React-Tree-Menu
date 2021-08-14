@@ -9,6 +9,7 @@ import group_image_down from './img/group_down.gif';
 import ic_down from './img/ic_down.gif'; 
 import ic_right from './img/ic_right.gif'; 
 import ic_zero from './img/ic_zero.gif'; 
+import ic_action_menu from './img/action_icon.gif'; 
 
 const getPaddingLeft = (level, type) => {
   let paddingLeft = level * 10+12;
@@ -69,8 +70,8 @@ height: 30px;
 
 
 const ItemIcon = styled.img`
-width: 16px;
-height: 16px;
+width: 19px;
+height: 22px;
 align-items: center;
 backgrownd-color:transparent;
 `;
@@ -84,20 +85,34 @@ align-items: center;
 backgrownd-color:transparent;
 `;
 
+const ItemActioMenu = styled.img`
+display:block;
+width: 34px;
+height: 22px;
+align-items: center;
+float: right;
+margin-left:-34px;
+backgrownd-color:transparent;
+`;
+
+const SpanItem = styled.span`
+display:block;
+width: 100%;
+height: 100%;
+text-align: left;
+float:left;
+`;
+
 
 
 const getNodeLabel = (node) => last(node.path.split('/'));
 
 const getActionImage = (node)=> {
-  if (node.type === 'group' && node.isActive  && node.isOpen ) {
+  if (node.type === 'group'   && node.isOpen ) {
     return (
       (ic_down) 
     )
-  } else if (node.type === 'group' && !node.isActive ) {
-    return (
-      (ic_zero)
-    )
-  } else if (node.type === 'group' && node.isActive  && !node.isOpen ) {
+  } else if (node.type === 'group'  && !node.isOpen ) {
     return (
       (ic_right) 
     )
@@ -107,12 +122,25 @@ const getActionImage = (node)=> {
     )
   };
 
+  const getMenuImage = (node)=> {
+    if ( node.isActive  ) {
+      return (
+        (ic_action_menu) 
+      )
+    }
+      
+      return (
+        ( ic_zero ) 
+      )
+    };
+
  
 
   const TreeNode = (props) => {
   const { node, getChildNodes, level, onToggle, onNodeSelect } = props;
 
   const ActionImage = getActionImage(node) ;
+  const ActionImageMenu = getMenuImage(node);
   
   return (
     <React.Fragment>
@@ -154,17 +182,62 @@ const getActionImage = (node)=> {
 
 
         
-        <NodeIcon   >
+        <NodeIcon  
+        
+        
+        onMouseLeave={() => { 
+          node.isActive= false;
+          onNodeSelect(node);
+           }} 
+          
+            onMouseEnter={() => { 
+            node.isActive= true;
+            onNodeSelect(node);
+           }}
+        
+        >
           { node.type === 'item' && <ItemIcon  src={item_image} onClick={() => onNodeSelect(node)} /> }
           { node.type === 'group' && node.isOpen === true && <ItemIcon  src={group_image} onClick={() => onToggle(node)} /> }
           { node.type === 'group' && !node.isOpen && <ItemIcon  src={group_image_down} onClick={() => onToggle(node)} /> }
         </NodeIcon>
         
 
-        <span role="button" onClick={() => onNodeSelect(node)}  >
+        <SpanItem role="button" onClick={() => {onNodeSelect(node); onToggle(node); }  }  
+
+        
+        
+        onMouseLeave={() => { 
+          node.isActive= false;
+          onNodeSelect(node);
+           }} 
+          
+            onMouseEnter={() => { 
+            node.isActive= true;
+            onNodeSelect(node);
+           }}
+        
+        >
           { getNodeLabel(node) }
-        </span>
+        </SpanItem>
+
+        <ItemActioMenu src={ActionImageMenu}
+        
+        onMouseLeave={() => { 
+          node.isActive= false;
+          onNodeSelect(node);
+           }} 
+          
+            onMouseEnter={() => { 
+            node.isActive= true;
+            onNodeSelect(node);
+           }}  
+        
+        />
+
         </ContextTreeNode>
+
+
+
       </StyledTreeNode>
       
       { node.isOpen && getChildNodes(node).map(childNode => (
