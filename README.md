@@ -11,7 +11,7 @@ Project Link: https://github.com/Vladimir-Novick/React-Tree-Menu
 
 ## Example
 
-![]( https://github.com/Vladimir-Novick/readme_img/example_tree.png)
+![]( https://github.com/Vladimir-Novick/React-Tree-Menu/blob/main/readme_img/example_tree.png?raw=true)
 
   
 ## Install dependencies:
