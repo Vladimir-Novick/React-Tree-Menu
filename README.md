@@ -10,6 +10,10 @@ Vladimir Novick -  vlad.novick@gmail.com , www.linkedin.com/in/vladimirnovick
 Project Link: https://github.com/Vladimir-Novick/React-Tree-Menu
 
   
+## Install dependencies:
+
+-  npm install 
+
 ## Install NPM packages:
 
 -  npm install -g create-react-app
