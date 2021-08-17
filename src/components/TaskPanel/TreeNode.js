@@ -10,6 +10,7 @@ import ic_down from './img/ic_down.gif';
 import ic_right from './img/ic_right.gif'; 
 import ic_zero from './img/ic_zero.gif'; 
 import ic_action_menu from './img/action_icon.gif'; 
+import {ItemActioMenu} from '../../common/styleComponent'
 
 const getPaddingLeft = (level, type) => {
   let paddingLeft = level * 10+12;
@@ -85,15 +86,7 @@ align-items: center;
 backgrownd-color:transparent;
 `;
 
-const ItemActioMenu = styled.img`
-display:block;
-width: 34px;
-height: 22px;
-align-items: center;
-float: right;
-margin-left:-34px;
-backgrownd-color:transparent;
-`;
+
 
 const SpanItem = styled.span`
 display:block;
