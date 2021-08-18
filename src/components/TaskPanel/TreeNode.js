@@ -74,7 +74,7 @@ const ItemIcon = styled.img`
 width: 19px;
 height: 22px;
 align-items: center;
-backgrownd-color:transparent;
+background-color:transparent;
 `;
 
 
@@ -83,7 +83,7 @@ display:block;
 width: 16px;
 height: 16px;
 align-items: center;
-backgrownd-color:transparent;
+background-color:transparent;
 `;
 
 

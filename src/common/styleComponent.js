@@ -18,6 +18,7 @@ background-color:transparent;
 
 export const StyledTreeExplorer = styled.div`
   width: 100%;
+  height:100%;
   max-width: 100%;
   margin: 0px left;
   margin-left:40px;
@@ -43,28 +44,21 @@ width: 100%;
 height: 30px;
 text-align: center;
 line-height:1.5;
+font-weight: bold;  
 `;
 
 
 
 
 
-export const spanMenuItem = styled.span`
-display:flex;
-width: 100%;
-height: 30px;
-padding-left: 20px;
-font-size: 1em;
-font-family:"Roboto", helvetica, arial, sans-serif;
-line-height:1.5;
-cursor: pointer;
-`;
+
 
 export const TreeWrapper = styled.div`
   width: 250px;
   height:100%;
   background-color:rgb(248, 248, 248);
-  position: fixed;
+  padding-top:8px;
+  position: relative;
   overflow-y:scroll;
   overflow-x : hidden;
 `;
