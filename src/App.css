@@ -1,8 +1,12 @@
 .App {
   text-align: left;
   color: rgb(79, 79, 83);
-  font-family: Verdana,  Tahoma, sans-serif, sans-serif;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+
 }
 
 .App-logo {
@@ -17,86 +21,11 @@
   color: white;
 }
 
-.Tree-intro {
-  width:300px;
-  height:100%;
-  background-color:rgb(248, 248, 248);
-  position: fixed;
-  overflow-y:hidden;
-  overflow-x : hidden;
-}
-
-.svgMenu {
- 
-  cursor:pointer;
-  padding-left: 10px;
-  padding-right:5px;
-}
-
-.divTable{
-	display: table;
-	width: 100%;
-  border-bottom:  1px solid #999999;
-  padding-bottom: 5px;
-}
-.divTableRow {
-	display: table-row;
-  height: 30px;
-}
-.divTableHeading {
-	display: table-header-group;
-}
 
 
-.divTableCell:hover {
-  background: #e5e9ef;
-}
 
 
-.divTableHead {
-	display: table-cell;
-	padding: 3px 20px;
-  padding-bottom: 5px;
-}
 
-.divTableCell {
-display: table-cell;
-padding: 3px 10px;
-
-height: 19px;
-width:100% !important;
-max-width: 100%;
-line-height:22px;
-margin-top:5px;
-cursor: pointer !important;
-font-family: Roboto, sans-serif;
-font-size: 16px;
-font-stretch: 100%;
-font-style: normal;
-font-variant-caps: normal;
-font-variant-east-asian: normal;
-font-variant-ligatures: normal;
-font-variant-numeric: normal;
-font-weight: 400;
-}
-
-.divTableCellTitle {
-	display: table-cell;
-	padding: 3px 10px;
-  text-align: center;
-  padding-bottom: 5px;
-  font-weight: 600;  
-  font-size: 12px;
-}
-.divTableHeading {
-	display: table-header-group;
-}
-.divTableFoot {
-	display: table-footer-group;
-}
-.divTableBody {
-	display: table-row-group;
-}
 
 
 

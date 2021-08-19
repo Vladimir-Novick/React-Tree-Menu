@@ -10,10 +10,10 @@ class App extends Component {
       <div className="App">
 
         <LeftBarExplorer />
-        <div className="Tree-intro">        
-          <TreeExplorer />
+   
+        <TreeExplorer />
         </div>
-      </div>
+      
     );
   }
 }

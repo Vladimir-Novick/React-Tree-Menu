@@ -1,0 +1,56 @@
+
+.svgMenu {
+ 
+    cursor:pointer;
+
+  }
+
+  .navigation-action-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+
+}
+
+.navigation-footer {
+  position: fixed;
+  bottom: 0;
+  width: 50px;
+}
+  
+
+.MSvgIcon-root {
+  fill: rgb(216, 200, 200);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.navigation-avatar-img {
+  position: relative;
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  margin-top: 8px;;
+  margin-left: 5px;
+  transition: background-color 100ms ease;
+}
+
+.navigation-avatar-div {
+  width:50px;
+  height: 50px;
+  border: 2px solid white;
+}

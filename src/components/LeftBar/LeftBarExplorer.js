@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import StyleLeftBarExplorer from './LeftBarNode';
+import LeftBarExplorerConponent from './LeftBarNode';
 
 
 export default class LeftBarExplorer extends Component { 
   render() {
 
     return (
-      <StyleLeftBarExplorer>
+      <LeftBarExplorerConponent >
 
-      </StyleLeftBarExplorer>
+      </LeftBarExplorerConponent>
     )
   }
 }

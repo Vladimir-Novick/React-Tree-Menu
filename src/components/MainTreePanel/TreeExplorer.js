@@ -29,14 +29,12 @@ export default class TreeExplorer extends Component {
     const { selectedFile } = this.state;
 
     return (
-      <StyledTreeExplorer>
+  
         <TreeWrapper>
           <Tree  onSelect={this.onSelect} />
         </TreeWrapper>
-        <div>
-          { selectedFile && selectedFile.type === 'item' && selectedFile.content }
-        </div>
-      </StyledTreeExplorer>
+
+
     )
   }
 }

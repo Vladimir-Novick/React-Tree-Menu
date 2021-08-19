@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import {ItemActioMenu,StyledTreeExplorer,ActionTreePanel,TreeWrapper,spanMenuTitle} from '../../common/styleComponent'
 import ic_action_menu from './img/action_icon.gif'; 
 import Tree from './Tree';
+import  './Tree.css';
 
-const spanMenuItem = styled.div`
+const spanMenuItem = styled.span`
 display:flex;
 width: 250px !important;
 height: 30px;
 padding-left: 20px;
+padding-bottom:5px;
 font-size: 1.5em;
 font-family: Verdana,  Tahoma, sans-serif, sans-serif;
 line-height:1.5;
@@ -20,6 +21,59 @@ cursor: pointer;
   }
 `;
 
+
+
+const ItemActioTreeMenu = styled.img`
+display:block;
+width: 34px;
+height: 22px;
+align-items: center;
+float: right;
+margin-left:-34px;
+cursor:pointer;
+background-color:transparent;
+
+`;
+
+
+
+const ActionTreePanel = styled.div`
+  height:auto;
+  width: 250px;
+  margin-top:10px;
+ padding-left:10px;
+  
+  display: flex;  
+`;
+
+
+
+
+
+ const spanMenuTitle = styled.span`
+display:flex;
+width: 100%;
+height: 30px;
+text-align: center;
+line-height:1.5;
+font-weight: bold;  
+`;
+
+
+
+
+
+
+
+ const TreeWrapper = styled.div`
+  width: 250px;
+  height:100%;
+  background-color:rgb(248, 248, 248);
+  padding-top:8px;
+  position: relative;
+  overflow-y:scroll;
+  overflow-x : hidden;
+`;
 
 
 export default class TreeExplorer extends Component { 
@@ -38,26 +92,26 @@ export default class TreeExplorer extends Component {
 
     return (
       
-      <StyledTreeExplorer>
-        <div>
+
+        <div class = "Tree-intro" id="Tree_panel">
           <ActionTreePanel>
 
 
-          <div class="divTable">
-<div class="divTableBody">
-<div class="divTableRow">
-<div class="divTableCellTitle">           
+          <div class="MenuTree">
+     <div class="MenuTreeBody">
+     <div class="MenuTreeRow">
+     <div class="MenuTreeCellTitle">           
 
           <spanMenuTitle role="button"  >
               Workspase
           </spanMenuTitle>
-<ItemActioMenu src={ic_action_menu}    
+<ItemActioTreeMenu src={ic_action_menu}    
         />
 
 </div>
 </div>
-<div class="divTableRow">
-<div class="divTableCell">
+<div class="MenuTreeRow">
+<div class="MenuTreeCell">
 
 
   
@@ -67,9 +121,9 @@ export default class TreeExplorer extends Component {
   
   </svg>       
 
-
+<spanMenuItem>
               Add Item
-
+              </spanMenuItem>
 
 
 
@@ -77,18 +131,18 @@ export default class TreeExplorer extends Component {
 </div>
 </div>
 
-<div class="divTableRow">
-<div class="divTableCell">
+<div class="MenuTreeRow">
+<div class="MenuTreeCell">
   
 <svg viewBox="0 0 20 20" fill="currentColor" width="19" height="19" role="img" 
 aria-hidden="true" class='svgMenu'>
   <path d="M17.8571 2.87669C18.107 3.41157 18.0246 4.04275 17.6457 4.49555L12.4892 10.6589V15.3856C12.4892 16.0185 12.097 16.5852 11.5048 16.8082L9.56669 17.5381C9.09976 17.7139 8.57627 17.6494 8.16598 17.3655C7.75569 17.0816 7.51084 16.6144 7.51084 16.1155V10.6589L2.35425 4.49555C1.97542 4.04275 1.89302 3.41157 2.14291 2.87669C2.39279 2.34182 2.92977 2 3.52013 2H16.4799C17.0702 2 17.6072 2.34182 17.8571 2.87669ZM16.4799 3.52012H3.52013L8.91611 9.96964C8.99036 10.0584 9.03096 10.1698 9.03096 10.2848V16.1155L10.969 15.3856V10.2848C10.969 10.1698 11.0096 10.0584 11.0839 9.96964L16.4799 3.52012Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
     </path>
 </svg>
-
+<spanMenuItem>
               Filter
 
-
+</spanMenuItem>
 
 
 
@@ -97,8 +151,8 @@ aria-hidden="true" class='svgMenu'>
 
 </div>
 
-<div class="divTableRow">
-<div class="divTableCell">
+<div class="MenuTreeRow">
+<div class="MenuTreeCell">
   
 <svg viewBox="0 0 20 20" fill="currentColor" width="19" height="19" role="button" tabindex="0" aria-hidden="false"
  class="svgMenu">
@@ -106,9 +160,9 @@ aria-hidden="true" class='svgMenu'>
      </path>
      </svg>    
 
-
+     <spanMenuItem>
              Search
-
+             </spanMenuItem>
 
 
 </div>
@@ -124,7 +178,7 @@ aria-hidden="true" class='svgMenu'>
         </TreeWrapper>
         </div>
 
-      </StyledTreeExplorer>
+
     )
   }
 }
