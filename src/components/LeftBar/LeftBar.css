@@ -54,3 +54,74 @@
   height: 50px;
   border: 2px solid white;
 }
+
+.navigation-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  padding-left:5px;
+  color: #fff;
+  font-size: 20px;
+  
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
+}
+
+
+
+.leftbar-tooltip-Bubble {
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 16px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.leftbar-Tolltip-base {
+  position: absolute;
+  -webkit-animation: 800ms linear 0s 1 animation-1f15dgw;
+  animation: 800ms linear 0s 1 animation-1f15dgw;
+  z-index: 9;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: 8px;
+  width:auto;
+  visibility:hidden
+}
+
+.leftbar-tooltip-Bubble {
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 16px;
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  width:max-content;
+}
+
+.leftbar-tooltip-BaseArrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(
+45deg
+);
+  -ms-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
+  transform: translateX(50%) translateY(-50%) rotateZ(45deg);
+  right: 100%;
+  top: 50%;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}

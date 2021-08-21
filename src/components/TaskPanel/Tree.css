@@ -3,7 +3,7 @@
     height:100%;
     background-color:rgb(245, 246, 248);
     position: fixed;
-    overflow-y:hidden;
+   
     overflow-x : hidden;
     left: 40px;
     display: flex;
