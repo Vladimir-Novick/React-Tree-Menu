@@ -22,15 +22,18 @@ flex-direction: column;
 
 
 
+
+
 class LeftBarExplorerConponent extends Component {
     state = {
         selectedFile: null,
+      
     };
 
 
 
     componentDidMount() {
-
+      
     }
 
     onActionClick(event, tree) {

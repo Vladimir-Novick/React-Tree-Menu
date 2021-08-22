@@ -23,12 +23,18 @@ class NavigationElement extends Component {
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
+        this.showHelp = true;
+       
       }
 
-      
+
         
     handleClick() {
-        console.log('Click happened');
+        this.showHelp = false;
+        if ( !this.tooltipElement){
+            this.tooltipElement = document.getElementById(this.props.idElement);  
+        }
+        this.tooltipElement.style.visibility='hidden';
         if (this.props.OnClickFunct) {
             this.props.OnClickFunct();
         }
@@ -46,15 +52,18 @@ class NavigationElement extends Component {
 
 
                     onMouseEnter={e => {
-                        var tooltipElement = document.getElementById(this.props.idElement);
-                        tooltipElement.style.visibility='visible';
+                        if (this.showHelp){
+                            if ( !this.tooltipElement){
+                                this.tooltipElement = document.getElementById(this.props.idElement);  
+                            }
+                          this.tooltipElement.style.visibility='visible';
+                        }
                     }}
                     onMouseLeave={e => {
-                        var tooltipElement = document.getElementById(this.props.idElement);
-                        tooltipElement.style.visibility='hidden';
+                        this.showHelp = true;
+                        this.tooltipElement = document.getElementById(this.props.idElement);
+                          this.tooltipElement.style.visibility='hidden';
                     }}
-
-
                 >
 
 
@@ -63,22 +72,12 @@ class NavigationElement extends Component {
                     />
 
 
-                    <svg class="MSvgIcon-root" focusable="false" viewBox="0 0 24 24" width="22" height="22" role="img" aria-hidden="true"
-
-
-
-
-                    >
-
-
-
-
-                        <path d={this.props.Svg}
+                    <svg class="MSvgIcon-root" focusable="false" viewBox="0 0 24 24" width="22" height="22" role="img" aria-hidden="true" >
+                       <path d={this.props.Svg}
                             fill="currentColor"
                             fill-rule="evenodd"
                             clip-rule="evenodd"
-                        >
-                        </path>
+                        />
                     </svg>
                 </div>
 
