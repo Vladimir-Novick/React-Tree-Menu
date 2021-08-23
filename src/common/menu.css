@@ -1,46 +1,140 @@
-.menu-node-container {
-	width: 100%;
-	background-color: rgb(137, 139, 143);
-	color: rgb(255, 255, 255);
-	height: 40px;
-	padding-left: 10px;
-	padding-top: 20px;
-	border-bottom: solid 1px rgb(73, 73, 73);
+
+.menu-svgMenu {
+ 
+    cursor:pointer;
+
+  }
+
+  .menu-action-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+
 }
 
-.menu-node-container:hover {
-	background-color: rgb(73, 73, 73);
+.menu-footer {
+  position: fixed;
+  bottom: 0;
+  width: 50px;
+}
+  
+
+.MSvgIcon-root {
+  fill: rgb(216, 200, 200);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  cursor: pointer;
 }
 
-.menu-leaf-container {
-	width: 100%;
-	background-color: rgb(94, 96, 99);
-	color: rgb(255, 255, 255);
-	height: 30px;
-	padding-left: 20px;
-	padding-top: 15px;
-	border-bottom: solid 1px rgb(73, 73 ,73);
+.menu-avatar-img {
+  position: relative;
+  border-radius: 50%;
+  width:40px;
+  height: 40px;
+  margin-top: 8px;;
+  margin-left: 5px;
+  transition: background-color 100ms ease;
 }
 
-.menu-leaf-container:hover {
-	background-color: rgb(73, 73, 73);
+.menu-avatar-div {
+  width:50px;
+  height: 50px;
+  border: 2px solid white;
 }
 
-.menu-load-more-container {
-	width: 100%;
-	background-color: rgb(255, 255, 255);
-	color: rgb(94, 96, 99);
-	height: 30px;
-	padding-left: 20px;
-	padding-top: 15px;
-	text-align: center;
-	list-style-type: none;
+.menu-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  padding-left:5px;
+  color: #fff;
+  font-size: 20px;
+  
+  cursor: pointer;
+  position: relative;
+  outline: none;
+
 }
 
-.menu-load-more-container:hover {
-	background-color: rgb(200, 200, 200);
+
+
+.menu-window-Bubble {
+  color: #fff;
+  background: #000;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 16px;
+  font-size: inherit;
+  font-family: inherit;
 }
 
-.menu-default-search-input {
-	background-color: rgb(200, 200, 200);
+.menu-window-base {
+  position:relative;
+  top:0;
+  left:9;
+  -webkit-animation: 800ms linear 0s 1 animation-1f15dgw;
+  animation: 800ms linear 0s 1 animation-1f15dgw;
+  z-index: 9;
+  left: 100%;
+  top: 0%;
+  margin-left: 8px;
+  width:auto;
+
+}
+
+.menu-window-Bubble {
+  color: #000;
+  background: #e5e9ef;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 16px;
+  font-size: 12px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  width: max-content;
+}
+
+.menu-window-BaseArrow {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #e5e9ef;
+  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(
+45deg
+);
+  -ms-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
+  transform: translateX(50%) translateY(-50%) rotateZ(45deg);
+  right: 100%;
+  top: 50%;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+
+.menu-splash-screen {
+  height: 100%;
+width: 100%;
+background:rgba(1,1,1,0.3);
+position: fixed;
+z-index: 8;
+top: 0;
+left: 0;
+visibility:hidden;
+display: flex;
+flex-direction: column;
 }

@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './LeftBar.css';
 
@@ -15,7 +15,7 @@ const TooltipBox = ({ TolltipText, id }) => (
 
 // prroperties:
 //     Svg, OnClickFunct, Tolltip, idElement
-
+//
 class NavigationElement extends Component {
 
     
@@ -29,14 +29,14 @@ class NavigationElement extends Component {
 
 
         
-    handleClick() {
+    handleClick(e) {
         this.showHelp = false;
         if ( !this.tooltipElement){
             this.tooltipElement = document.getElementById(this.props.idElement);  
         }
         this.tooltipElement.style.visibility='hidden';
         if (this.props.OnClickFunct) {
-            this.props.OnClickFunct();
+            this.props.OnClickFunct(e);
         }
       }
 
@@ -45,6 +45,10 @@ class NavigationElement extends Component {
 
 
             return (
+
+
+                
+
 
                 <div class="navigation-element"
 
@@ -85,6 +89,8 @@ class NavigationElement extends Component {
         }
     };
 
-
+    NavigationElement.propTypes = {
+        OnClickFunct: PropTypes.any,
+      };
 
 export default NavigationElement;

@@ -3,6 +3,7 @@ import React, { Component, useState } from 'react';
 import company_img from './img/company.png'
 import './LeftBar.css';
 import NavigationElement from './NavigationElement'
+import MenuWindow from '../../common/MenuWindow';
 
 
 
@@ -42,6 +43,22 @@ class LeftBarExplorerConponent extends Component {
         });
     }
 
+
+
+
+    onMainMenuShow = (e,element) => {
+
+        if ( !this.MainMenuWindow){
+            this.MainMenuWindow = document.getElementById("MainMenuWindow");  
+        }
+      this.MainMenuWindow.style.visibility='visible';
+      var c = this.MainMenuWindow.childNodes;
+      var cursorX = e.pageX;
+      var cursorY = e.pageY;
+      c[0].style.left = cursorX + 'px';
+      c[0].style.top = cursorY+ 'px';
+    }
+
     render() {
 
         return (
@@ -57,7 +74,7 @@ class LeftBarExplorerConponent extends Component {
                 </div>
 
 
-
+               
 
 
 
@@ -65,11 +82,11 @@ class LeftBarExplorerConponent extends Component {
                     Svg="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
                     Tolltip="Workspace Options"
                     idElement="LeftBarOptions"
-
-
+                    OnClickFunct = {this.onMainMenuShow} 
+                    MenuWindowName = "MainMenuWindow"
                 ></NavigationElement>
 
-
+<MenuWindow id="MainMenuWindow" />
 
 
                 <NavigationElement
