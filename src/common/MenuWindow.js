@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './menu.css';
 
 
+
+
 class MenuWindow extends Component {
 
 
@@ -38,8 +40,21 @@ class MenuWindow extends Component {
                     <div class="menu-window-Bubble">
                 
                 
-                
-                Menu text
+                    <div  class="menu-table"> 
+                    <div class="menu-table-Body">
+                        {this.props.MenuList.map(item => (
+                            <div class="menu-table-Row">
+                            <div class="menu-table-Cell">
+                            <svg fill="#000000"  viewBox="0 0 24 24" width="18px" height="18px"><path d={item.svg}
+                            /></svg>&nbsp;
+                            <span class="menu-table-center">
+                            {item.title}
+                            </span>
+                            </div>
+                            </div>
+                         ))}
+                   </div>      
+                   </div>
                 
                 </div></div>
                
