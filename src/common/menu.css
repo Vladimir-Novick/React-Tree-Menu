@@ -147,7 +147,6 @@ flex-direction: column;
 .menu-table-Row {
 	display: table-row;
   width: max-content;
-
 }
 
 .menu-table-Row:hover {

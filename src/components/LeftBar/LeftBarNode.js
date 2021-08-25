@@ -10,7 +10,7 @@ import MenuWindow from '../../common/MenuWindow';
 
 const StyleLeftBarDiv = styled.div`
 height: 100%;
-width: 50px;
+width: 44px;
 background-color:rgb(41, 47, 76);
 position: fixed;
 z-index: 1;
