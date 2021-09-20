@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './LeftBar.css';
-
+import { withRouter   } from 'react-router-dom'
 
 
 const TooltipBox = ({ TolltipText, id }) => (
@@ -37,6 +37,11 @@ class NavigationElement extends Component {
         this.tooltipElement.style.visibility='hidden';
         if (this.props.OnClickFunct) {
             this.props.OnClickFunct(e);
+        } else {
+            if (this.props.idElement.startsWith("/")){
+                let link = this.props.idElement;
+                this.props.history.push(link);
+            }
         }
       }
 
@@ -93,4 +98,4 @@ class NavigationElement extends Component {
         OnClickFunct: PropTypes.any,
       };
 
-export default NavigationElement;
+export default withRouter(NavigationElement);
