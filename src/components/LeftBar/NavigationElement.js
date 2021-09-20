@@ -98,4 +98,4 @@ class NavigationElement extends Component {
         OnClickFunct: PropTypes.any,
       };
 
-export default withRouter(NavigationElement);
+export default NavigationElement;
