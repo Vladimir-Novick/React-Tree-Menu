@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './menu.css';
+import eventBus from "./EventBus";
 
 
 

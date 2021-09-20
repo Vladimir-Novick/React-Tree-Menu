@@ -72,7 +72,7 @@ const ItemIcon = styled.img`
 width: 16px;
 height: 16px;
 align-items: center;
-backgrownd-color:transparent;
+background:transparent;
 `;
 
 
@@ -81,7 +81,7 @@ display:block;
 width: 12px;
 height: 12px;
 align-items: center;
-backgrownd-color:transparent;
+background:transparent;
 `;
 
 
