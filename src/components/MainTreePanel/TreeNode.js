@@ -22,11 +22,6 @@ const StyledTreeNode = styled.div`
   padding-left: ${props => getPaddingLeft(props.level, props.type)}px;
 `;
 
-
-
-
-
-
 const ContextTreeNode = styled.div`
 display: flex;
 flex-direction: row;
@@ -60,13 +55,11 @@ const NodeIconGroup = styled.div`
   margin-right: ${props => props.marginRight ? props.marginRight : 5}px;
 `;
 
-
 const LeftBorderIcon = styled.img`
 width: 8px;
 height: 30px;
 
 `;
-
 
 const ItemIcon = styled.img`
 width: 16px;
@@ -75,7 +68,6 @@ align-items: center;
 background:transparent;
 `;
 
-
 const ItemActionOpen = styled.img`
 display:block;
 width: 12px;
@@ -83,7 +75,6 @@ height: 12px;
 align-items: center;
 background:transparent;
 `;
-
 
 const getNodeLabel = (node) => last(node.path.split('/'));
 
@@ -105,7 +96,6 @@ const TreeNode = (props) => {
         </NodeIconGroup>
 
       <LeftBorderIcon src={left_image} />
-
 
         
         <NodeIcon   >

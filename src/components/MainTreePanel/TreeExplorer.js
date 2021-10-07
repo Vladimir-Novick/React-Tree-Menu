@@ -34,7 +34,6 @@ export default class TreeExplorer extends Component {
           <Tree  onSelect={this.onSelect} />
         </TreeWrapper>
 
-
     )
   }
 }

@@ -27,11 +27,9 @@
 	display: table-header-group;
 }
 
-
 .MenuTreeCell:hover {
   background: #e5e9ef;
 }
-
 
 .MenuTreeHead {
 	display: table-cell;

@@ -4,8 +4,6 @@ import values from 'lodash/values';
 import PropTypes from 'prop-types';
 import TreeNode from './TreeNode';
 
-
-
 export default class Tree extends Component {
 
   state = {

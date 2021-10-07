@@ -11,7 +11,6 @@ import ic_right from './img/ic_right.gif';
 import ic_zero from './img/ic_zero.gif'; 
 import ic_action_menu from './img/action_icon.gif'; 
 
-
 const getPaddingLeft = (level, type) => {
   let paddingLeft = level * 10+12;
   if (type === 'item') paddingLeft += 5;
@@ -30,14 +29,12 @@ background-color:transparent;
 
 `;
 
-
 const StyledTreeNode = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: ${props => getPaddingLeft(props.level, props.type)}px;
 `;
-
 
 const ContextTreeNode = styled.div`
 display: flex;
@@ -74,13 +71,11 @@ const NodeIconGroup = styled.div`
   margin-right: ${props => props.marginRight ? props.marginRight : 5}px;
 `;
 
-
 const LeftBorderIcon = styled.img`
 width: 0px;
 height: 30px;
 
 `;
-
 
 const ItemIcon = styled.img`
 width: 19px;
@@ -88,7 +83,6 @@ height: 22px;
 align-items: center;
 background-color:transparent;
 `;
-
 
 const ItemActionOpen = styled.img`
 display:block;
@@ -98,8 +92,6 @@ align-items: center;
 background-color:transparent;
 `;
 
-
-
 const SpanItem = styled.span`
 display:block;
 width: 100%;
@@ -107,8 +99,6 @@ height: 100%;
 text-align: left;
 float:left;
 `;
-
-
 
 const getNodeLabel = (node) => last(node.path.split('/'));
 
@@ -179,12 +169,9 @@ const getActionImage = (node)=> {
         /> 
         
 
-
-
         </NodeIconGroup>
 
       <LeftBorderIcon src={left_image} />
-
 
         
         <NodeIcon  
@@ -240,8 +227,6 @@ const getActionImage = (node)=> {
         />
 
         </ContextTreeNode>
-
-
 
       </StyledTreeNode>
       

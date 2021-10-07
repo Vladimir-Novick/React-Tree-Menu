@@ -1,23 +1,19 @@
-
 .svgMenu {
- 
-    cursor:pointer;
+  cursor: pointer;
+}
 
-  }
-
-  .navigation-action-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 44px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-
+.navigation-action-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
 }
 
 .navigation-footer {
@@ -25,7 +21,6 @@
   bottom: 0;
   width: 0px;
 }
-  
 
 .MSvgIcon-root {
   fill: rgb(216, 200, 200);
@@ -42,15 +37,15 @@
 .navigation-avatar-img {
   position: relative;
   border-radius: 50%;
-  width:40px;
+  width: 40px;
   height: 40px;
-  margin-top: 8px;;
+  margin-top: 8px;
   margin-left: 0px;
   transition: background-color 100ms ease;
 }
 
 .navigation-avatar-div {
-  width:50px;
+  width: 50px;
   height: 50px;
   border: 2px solid white;
 }
@@ -61,17 +56,14 @@
   align-items: center;
   height: 40px;
   width: 40px;
-  padding-left:0px;
+  padding-left: 0px;
   color: #fff;
   font-size: 20px;
-  
+
   cursor: pointer;
   position: relative;
   outline: none;
-
 }
-
-
 
 .leftbar-tooltip-Bubble {
   color: #fff;
@@ -94,8 +86,8 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-left: 8px;
-  width:auto;
-  visibility:hidden
+  width: auto;
+  visibility: hidden;
 }
 
 .leftbar-tooltip-Bubble {
@@ -107,7 +99,7 @@
   font-size: 12px;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
-  width:max-content;
+  width: max-content;
 }
 
 .leftbar-tooltip-BaseArrow {
@@ -115,9 +107,7 @@
   width: 8px;
   height: 8px;
   background: #000;
-  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(
-45deg
-);
+  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   -ms-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   right: 100%;

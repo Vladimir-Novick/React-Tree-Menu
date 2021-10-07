@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import LeftBarExplorerConponent from './LeftBarNode';
 
-
-export default class LeftBarExplorer extends Component { 
+export default class LeftBarExplorer extends Component {
   render() {
 
     return (

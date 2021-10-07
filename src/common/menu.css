@@ -1,23 +1,19 @@
-
 .menu-svgMenu {
- 
-    cursor:pointer;
+  cursor: pointer;
+}
 
-  }
-
-  .menu-action-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 44px;
-    width: 44px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    outline: none;
-
+.menu-action-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
 }
 
 .menu-footer {
@@ -25,7 +21,6 @@
   bottom: 0;
   width: 50px;
 }
-  
 
 .MSvgIcon-root {
   fill: rgb(216, 200, 200);
@@ -42,15 +37,15 @@
 .menu-avatar-img {
   position: relative;
   border-radius: 50%;
-  width:40px;
+  width: 40px;
   height: 40px;
-  margin-top: 8px;;
+  margin-top: 8px;
   margin-left: 5px;
   transition: background-color 100ms ease;
 }
 
 .menu-avatar-div {
-  width:50px;
+  width: 50px;
   height: 50px;
   border: 2px solid white;
 }
@@ -63,14 +58,11 @@
   width: 40px;
   color: #fff;
   font-size: 20px;
-  
+
   cursor: pointer;
   position: relative;
   outline: none;
-
 }
-
-
 
 .menu-window-Bubble {
   color: #fff;
@@ -83,17 +75,16 @@
 }
 
 .menu-window-base {
-  position:relative;
-  top:0;
-  left:9;
+  position: relative;
+  top: 0;
+  left: 9;
   -webkit-animation: 800ms linear 0s 1 animation-1f15dgw;
   animation: 800ms linear 0s 1 animation-1f15dgw;
   z-index: 9;
   left: 100%;
   top: 0%;
   margin-left: 8px;
-  width:auto;
-
+  width: auto;
 }
 
 .menu-window-Bubble {
@@ -113,9 +104,7 @@
   width: 8px;
   height: 8px;
   background: #e5e9ef;
-  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(
-45deg
-);
+  -webkit-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   -ms-transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   transform: translateX(50%) translateY(-50%) rotateZ(45deg);
   right: 100%;
@@ -124,44 +113,42 @@
   border-bottom: 1px solid #000;
 }
 
-
 .menu-splash-screen {
   height: 100%;
-width: 100%;
-background:rgba(1,1,1,0.3);
-position: fixed;
-z-index: 8;
-top: 0;
-left: 0;
-visibility:hidden;
-display: flex;
-flex-direction: column;
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu-table{
-	display: table;
-	width: 100%;
+.menu-table {
+  display: table;
+  width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .menu-table-Row {
-	display: table-row;
+  display: table-row;
   width: max-content;
 }
 
 .menu-table-Row:hover {
   background: #a6a9ad;
   border: 1px solid white;
-  color:white;
+  color: white;
 }
 
 .menu-table-Heading {
-	display: table-header-group;
+  display: table-header-group;
 }
-.menu-table-Cell
-{
-  cursor:pointer;
-	display: table-cell;
+.menu-table-Cell {
+  cursor: pointer;
+  display: table-cell;
   padding-left: 14px;
   padding-right: 14px;
   padding-bottom: 3px;
@@ -179,25 +166,23 @@ flex-direction: column;
   font-weight: 400;
 }
 
-
-
 .menu-table-Head {
-	display: table-cell;
+  display: table-cell;
 }
 .menu-table-Heading {
-	display: table-header-group;
-	font-weight: bold;
+  display: table-header-group;
+  font-weight: bold;
 }
 .menu-table-Foot {
-	display: table-footer-group;
-	font-weight: bold;
+  display: table-footer-group;
+  font-weight: bold;
 }
 .menu-table-Body {
-	display: table-row-group;
+  display: table-row-group;
 }
 
 .menu-table-center {
   margin-bottom: 5px;
-  
+
   width: max-content;
 }
